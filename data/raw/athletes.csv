@@ -1,0 +1,101 @@
+athlete_id,athlete_name,sport,position,height_in,bodyweight_start_lb,standing_reach_in,primary_goal,created_at
+1,Athlete 1,Volleyball,DS,72.5,189.2,91.9,Improve vertical jump,2026-01-01
+2,Athlete 2,Volleyball,OPP,75.6,169.8,95.7,Build strength and power,2026-01-01
+3,Athlete 3,Volleyball,MB,75.7,164.7,97.3,Increase approach touch,2026-01-01
+4,Athlete 4,Volleyball,OH,72.6,164.8,91.5,Increase approach touch,2026-01-01
+5,Athlete 5,Volleyball,DS,71.7,137.1,88.2,Improve vertical jump,2026-01-01
+6,Athlete 6,Volleyball,DS,69.3,181.9,86.5,Build strength and power,2026-01-01
+7,Athlete 7,Volleyball,Libero,68.3,207.2,84.6,Improve vertical jump,2026-01-01
+8,Athlete 8,Volleyball,Libero,70.3,143.7,89.4,Reduce soreness while training,2026-01-01
+9,Athlete 9,Volleyball,OPP,69.4,149.7,88.3,Improve vertical jump,2026-01-01
+10,Athlete 10,Volleyball,OPP,72.1,168.6,90.7,Increase approach touch,2026-01-01
+11,Athlete 11,Volleyball,OH,69.2,174.7,90.7,Improve volleyball performance,2026-01-01
+12,Athlete 12,Volleyball,Libero,67.8,148.1,87.3,Improve vertical jump,2026-01-01
+13,Athlete 13,Volleyball,Libero,71.6,145.8,88.0,Increase approach touch,2026-01-01
+14,Athlete 14,Volleyball,DS,71.6,178.8,92.0,Build strength and power,2026-01-01
+15,Athlete 15,Volleyball,DS,70.7,142.5,89.3,Improve volleyball performance,2026-01-01
+16,Athlete 16,Volleyball,Setter,68.8,198.3,86.7,Increase approach touch,2026-01-01
+17,Athlete 17,Volleyball,Setter,72.0,182.1,88.8,Improve volleyball performance,2026-01-01
+18,Athlete 18,Volleyball,MB,69.8,188.5,87.6,Improve vertical jump,2026-01-01
+19,Athlete 19,Volleyball,OH,74.1,156.5,95.5,Build strength and power,2026-01-01
+20,Athlete 20,Volleyball,Setter,70.1,196.5,89.5,Improve explosiveness,2026-01-01
+21,Athlete 21,Volleyball,MB,69.6,150.7,88.1,Increase approach touch,2026-01-01
+22,Athlete 22,Volleyball,OH,67.4,204.8,86.8,Improve explosiveness,2026-01-01
+23,Athlete 23,Volleyball,OPP,70.8,183.0,91.4,Improve vertical jump,2026-01-01
+24,Athlete 24,Volleyball,Setter,69.1,208.8,88.3,Improve vertical jump,2026-01-01
+25,Athlete 25,Volleyball,MB,70.9,117.4,92.4,Improve explosiveness,2026-01-01
+26,Athlete 26,Volleyball,Libero,73.5,168.4,93.5,Improve explosiveness,2026-01-01
+27,Athlete 27,Volleyball,OPP,71.3,170.2,87.6,Build strength and power,2026-01-01
+28,Athlete 28,Volleyball,Setter,72.1,163.6,93.8,Improve volleyball performance,2026-01-01
+29,Athlete 29,Volleyball,OPP,68.6,195.1,86.4,Reduce soreness while training,2026-01-01
+30,Athlete 30,Volleyball,OPP,72.0,186.3,90.6,Improve volleyball performance,2026-01-01
+31,Athlete 31,Volleyball,MB,71.3,159.6,92.0,Build strength and power,2026-01-01
+32,Athlete 32,Volleyball,Libero,70.0,142.8,88.3,Improve explosiveness,2026-01-01
+33,Athlete 33,Volleyball,Libero,71.9,175.1,91.7,Increase approach touch,2026-01-01
+34,Athlete 34,Volleyball,DS,70.3,165.7,87.2,Improve vertical jump,2026-01-01
+35,Athlete 35,Volleyball,OPP,70.0,171.5,87.7,Build strength and power,2026-01-01
+36,Athlete 36,Volleyball,OH,72.2,178.8,94.5,Improve explosiveness,2026-01-01
+37,Athlete 37,Volleyball,OPP,71.8,132.8,91.1,Increase approach touch,2026-01-01
+38,Athlete 38,Volleyball,OPP,70.9,229.2,90.1,Reduce soreness while training,2026-01-01
+39,Athlete 39,Volleyball,MB,70.4,174.2,89.9,Reduce soreness while training,2026-01-01
+40,Athlete 40,Volleyball,DS,67.5,191.5,87.4,Improve explosiveness,2026-01-01
+41,Athlete 41,Volleyball,OH,73.4,205.9,91.9,Improve explosiveness,2026-01-01
+42,Athlete 42,Volleyball,MB,66.8,223.2,85.7,Increase approach touch,2026-01-01
+43,Athlete 43,Volleyball,DS,68.0,177.2,85.5,Improve explosiveness,2026-01-01
+44,Athlete 44,Volleyball,DS,69.5,176.5,85.9,Build strength and power,2026-01-01
+45,Athlete 45,Volleyball,DS,67.8,154.8,86.8,Improve vertical jump,2026-01-01
+46,Athlete 46,Volleyball,Libero,75.6,167.9,94.8,Build strength and power,2026-01-01
+47,Athlete 47,Volleyball,OH,73.4,180.0,91.4,Improve volleyball performance,2026-01-01
+48,Athlete 48,Volleyball,DS,74.9,179.1,92.7,Increase approach touch,2026-01-01
+49,Athlete 49,Volleyball,OH,71.8,147.8,92.4,Reduce soreness while training,2026-01-01
+50,Athlete 50,Volleyball,Setter,67.0,181.5,85.9,Improve explosiveness,2026-01-01
+51,Athlete 51,Volleyball,DS,71.8,160.0,91.7,Build strength and power,2026-01-01
+52,Athlete 52,Volleyball,Libero,71.7,159.3,91.5,Increase approach touch,2026-01-01
+53,Athlete 53,Volleyball,DS,76.6,148.8,98.0,Improve explosiveness,2026-01-01
+54,Athlete 54,Volleyball,OPP,73.0,192.3,91.2,Increase approach touch,2026-01-01
+55,Athlete 55,Volleyball,OPP,74.5,196.2,93.4,Improve explosiveness,2026-01-01
+56,Athlete 56,Volleyball,Setter,72.2,216.7,92.9,Improve explosiveness,2026-01-01
+57,Athlete 57,Volleyball,OPP,70.3,155.4,88.2,Increase approach touch,2026-01-01
+58,Athlete 58,Volleyball,Libero,68.6,182.5,87.0,Build strength and power,2026-01-01
+59,Athlete 59,Volleyball,MB,71.8,175.3,92.4,Increase approach touch,2026-01-01
+60,Athlete 60,Volleyball,DS,75.4,234.8,95.4,Reduce soreness while training,2026-01-01
+61,Athlete 61,Volleyball,Setter,72.9,151.4,91.3,Build strength and power,2026-01-01
+62,Athlete 62,Volleyball,Setter,72.4,190.7,91.6,Increase approach touch,2026-01-01
+63,Athlete 63,Volleyball,MB,72.4,156.4,91.8,Increase approach touch,2026-01-01
+64,Athlete 64,Volleyball,OH,66.5,193.8,83.8,Build strength and power,2026-01-01
+65,Athlete 65,Volleyball,Libero,71.6,178.8,89.1,Improve volleyball performance,2026-01-01
+66,Athlete 66,Volleyball,MB,72.2,178.4,90.4,Build strength and power,2026-01-01
+67,Athlete 67,Volleyball,Libero,71.2,182.9,88.7,Reduce soreness while training,2026-01-01
+68,Athlete 68,Volleyball,Libero,72.7,198.2,94.0,Reduce soreness while training,2026-01-01
+69,Athlete 69,Volleyball,MB,66.9,186.3,83.6,Increase approach touch,2026-01-01
+70,Athlete 70,Volleyball,OH,72.5,259.8,92.8,Improve volleyball performance,2026-01-01
+71,Athlete 71,Volleyball,Setter,72.7,196.0,94.0,Improve vertical jump,2026-01-01
+72,Athlete 72,Volleyball,OPP,73.0,191.7,92.2,Improve vertical jump,2026-01-01
+73,Athlete 73,Volleyball,OH,68.7,164.3,86.9,Build strength and power,2026-01-01
+74,Athlete 74,Volleyball,OH,71.2,133.9,93.9,Build strength and power,2026-01-01
+75,Athlete 75,Volleyball,Setter,73.1,164.6,90.4,Improve volleyball performance,2026-01-01
+76,Athlete 76,Volleyball,OPP,74.3,151.3,94.5,Reduce soreness while training,2026-01-01
+77,Athlete 77,Volleyball,Setter,68.9,158.9,88.5,Improve volleyball performance,2026-01-01
+78,Athlete 78,Volleyball,Setter,71.6,160.7,91.0,Improve volleyball performance,2026-01-01
+79,Athlete 79,Volleyball,MB,77.4,130.4,99.2,Improve volleyball performance,2026-01-01
+80,Athlete 80,Volleyball,OPP,71.6,193.8,89.9,Build strength and power,2026-01-01
+81,Athlete 81,Volleyball,DS,68.6,186.1,86.9,Improve vertical jump,2026-01-01
+82,Athlete 82,Volleyball,DS,73.6,167.6,91.7,Improve volleyball performance,2026-01-01
+83,Athlete 83,Volleyball,MB,69.6,213.8,87.4,Build strength and power,2026-01-01
+84,Athlete 84,Volleyball,MB,72.2,195.2,89.8,Improve vertical jump,2026-01-01
+85,Athlete 85,Volleyball,MB,77.4,141.6,99.8,Reduce soreness while training,2026-01-01
+86,Athlete 86,Volleyball,OH,69.5,159.4,90.2,Reduce soreness while training,2026-01-01
+87,Athlete 87,Volleyball,OPP,72.3,154.6,93.0,Build strength and power,2026-01-01
+88,Athlete 88,Volleyball,DS,70.8,152.5,85.1,Improve explosiveness,2026-01-01
+89,Athlete 89,Volleyball,Libero,70.2,210.9,87.3,Increase approach touch,2026-01-01
+90,Athlete 90,Volleyball,Libero,66.7,177.9,84.0,Improve vertical jump,2026-01-01
+91,Athlete 91,Volleyball,DS,75.3,200.6,93.5,Improve explosiveness,2026-01-01
+92,Athlete 92,Volleyball,DS,71.0,185.2,88.7,Improve volleyball performance,2026-01-01
+93,Athlete 93,Volleyball,Libero,71.6,176.5,90.0,Increase approach touch,2026-01-01
+94,Athlete 94,Volleyball,OH,69.8,189.6,88.8,Improve explosiveness,2026-01-01
+95,Athlete 95,Volleyball,OH,75.8,221.9,94.4,Improve volleyball performance,2026-01-01
+96,Athlete 96,Volleyball,Libero,65.1,187.9,82.4,Improve vertical jump,2026-01-01
+97,Athlete 97,Volleyball,Libero,71.8,170.4,90.3,Improve explosiveness,2026-01-01
+98,Athlete 98,Volleyball,Setter,69.5,193.7,87.4,Improve vertical jump,2026-01-01
+99,Athlete 99,Volleyball,OPP,72.1,194.8,90.5,Improve explosiveness,2026-01-01
+100,Athlete 100,Volleyball,MB,71.9,188.9,92.5,Increase approach touch,2026-01-01

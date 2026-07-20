@@ -1,0 +1,7 @@
+table_name,total_rows,total_columns,missing_values,duplicate_rows,duplicate_primary_keys,invalid_date_values,quality_status
+athletes,100,9,0,0,0,0,Pass
+training_blocks,400,8,0,0,0,0,Pass
+daily_wellness,10000,14,10000,0,0,0,Pass
+training_sessions,10000,12,10000,0,0,0,Pass
+exercise_sets,55200,12,228137,0,0,0,Pass
+performance_tests,8000,15,8000,0,0,0,Pass

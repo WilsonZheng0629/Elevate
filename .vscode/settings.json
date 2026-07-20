@@ -6,6 +6,12 @@
             "driver": "SQLite",
             "database": "${workspaceFolder:Elevate}/data/processed/elevate.db",
             "name": "Elevate SQLite"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "processed",
+            "database": "${workspaceFolder:Elevate}/data/processed/elevate.db"
         }
     ]
 }

@@ -1,36 +1,43 @@
--- Am I overtraining?
-SELECT
-    w.log_date,
-    w.sleep_hours,
-    w.soreness_overall_1_10,
-    w.energy_1_5,
+-- Question: Is recent training stress elevated?
 
-    COALESCE(SUM(t.session_load),0) AS last_3_day_load,
+WITH params AS (
+    SELECT 1 AS athlete_id
+)
+
+SELECT
+    r.log_date,
+    r.sleep_hours,
+    r.soreness_overall_1_10,
+    r.energy_1_5,
+
+    r.seven_day_training_load,
+    r.twenty_eight_day_training_load,
+    r.load_spike_ratio,
+
+    r.readiness_score,
 
     CASE
-        WHEN COALESCE(SUM(t.session_load),0) > 1500
-            AND w.soreness_overall_1_10 >= 7
-            AND w.energy_1_5 <= 2
-        THEN 'High Risk'
+        WHEN
+            r.knee_pain_0_10 >= 6
+            OR r.ankle_pain_0_10 >= 6
+            OR r.readiness_score < 50
+        THEN 'High'
 
-        WHEN COALESCE(SUM(t.session_load),0) > 1000
-            AND w.soreness_overall_1_10 >= 6
-        THEN 'Moderate Risk'
+        WHEN
+            r.readiness_score < 70
+            OR r.soreness_overall_1_10 >= 7
+            OR r.load_spike_ratio >= 1.50
+        THEN 'Moderate'
 
         ELSE 'Normal'
-    END AS overtraining_flag
+    END AS training_stress_flag,
 
-FROM daily_wellness w
+    r.recommendation,
+    r.recommendation_reason
 
-LEFT JOIN training_sessions t
-ON t.athlete_id = w.athlete_id
-AND t.session_date
-BETWEEN date(w.log_date,'-3 day') AND w.log_date
+FROM v_recovery_status AS r
 
-WHERE w.athlete_id = 1
+JOIN params AS p
+    ON p.athlete_id = r.athlete_id
 
-GROUP BY
-    w.log_date
-
-ORDER BY
-    w.log_date;
+ORDER BY DATE(r.log_date);

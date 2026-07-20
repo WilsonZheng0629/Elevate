@@ -124,10 +124,10 @@ daily_performance AS (
         test_date,
         MAX(
             CASE
-                WHEN metric_name = 'approach_jump'
+                WHEN metric_name = 'approach_vertical'
                 THEN metric_value
             END
-        ) AS approach_jump_value,
+        ) AS approach_vertical,
 
         MAX(
             CASE
@@ -168,7 +168,7 @@ base_features AS (
             0
         ) AS sessions_completed,
 
-        dp.approach_jump_value,
+        dp.approach_vertical,
         dp.cmj_value
 
     FROM daily_wellness AS dw

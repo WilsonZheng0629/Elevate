@@ -31,4 +31,3 @@ JOIN params AS p
     ON p.athlete_id = r.athlete_id
 
 ORDER BY DATE(r.log_date);
-

@@ -8,9 +8,7 @@ import plotly.graph_objects as go
 import streamlit as st
 
 
-# ============================================================
 # PAGE CONFIGURATION
-# ============================================================
 
 st.set_page_config(
     page_title="Elevate",
@@ -20,9 +18,7 @@ st.set_page_config(
 )
 
 
-# ============================================================
 # PROJECT PATHS
-# ============================================================
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
@@ -48,11 +44,9 @@ QUALITY_REPORT_PATH = (
 )
 
 
-# ============================================================
 # CUSTOM STYLING
-# ============================================================
 
-st.markdown(
+st.html(
     """
     <style>
         .block-container {
@@ -102,14 +96,11 @@ st.markdown(
             margin-bottom: 18px;
         }
     </style>
-    """,
-    unsafe_allow_html=True,
+    """
 )
 
 
-# ============================================================
 # DATA LOADING
-# ============================================================
 
 @st.cache_data
 def load_data() -> tuple[
@@ -165,9 +156,7 @@ def load_data() -> tuple[
     return daily, performance, quality
 
 
-# ============================================================
 # HELPER FUNCTIONS
-# ============================================================
 
 def safe_delta(
     current_value: float | int | None,
@@ -321,9 +310,7 @@ def calculate_data_completeness(
     )
 
 
-# ============================================================
 # LOAD DATA
-# ============================================================
 
 try:
     daily_features, performance_features, quality_report = (
@@ -334,9 +321,7 @@ except FileNotFoundError as error:
     st.stop()
 
 
-# ============================================================
 # SIDEBAR FILTERS
-# ============================================================
 
 st.sidebar.title("Elevate")
 st.sidebar.caption(
@@ -439,9 +424,7 @@ st.sidebar.markdown(
 )
 
 
-# ============================================================
 # PAGE HEADER
-# ============================================================
 
 st.title("Elevate Performance Overview")
 
@@ -456,9 +439,7 @@ st.markdown(
 )
 
 
-# ============================================================
 # LATEST STATUS
-# ============================================================
 
 if filtered_daily.empty:
     st.warning(
@@ -494,9 +475,7 @@ data_completeness = calculate_data_completeness(
 )
 
 
-# ============================================================
 # PRIMARY KPI CARDS
-# ============================================================
 
 kpi_col_1, kpi_col_2, kpi_col_3, kpi_col_4 = (
     st.columns(4)
@@ -555,9 +534,7 @@ with kpi_col_4:
     )
 
 
-# ============================================================
 # RECOMMENDATION CARD
-# ============================================================
 
 recommendation = latest_daily["recommendation"]
 recommendation_reason = latest_daily[
@@ -567,31 +544,30 @@ recommended_action = build_recommendation_action(
     recommendation
 )
 
-st.markdown(
-    f"""
-    <div class="recommendation-card">
-        <div class="small-label">
-            Latest training recommendation
-        </div>
-
-        <div class="recommendation-title">
-            {recommendation}
-        </div>
-
-        <div class="recommendation-reason">
-            <strong>Reason:</strong> {recommendation_reason}
-            <br>
-            <strong>Action:</strong> {recommended_action}
-        </div>
+recommendation_html = f"""
+<div class="recommendation-card">
+    <div class="small-label">
+        Latest training recommendation
     </div>
-    """,
-    unsafe_allow_html=True,
+
+    <div class="recommendation-title">
+        {recommendation}
+    </div>
+
+    <div class="recommendation-reason">
+        <strong>Reason:</strong> {recommendation_reason}<br>
+        <strong>Action:</strong> {recommended_action}
+    </div>
+</div>
+"""
+
+st.html(
+    recommendation_html,
+    width="stretch",
 )
 
 
-# ============================================================
 # SECONDARY KPI CARDS
-# ============================================================
 
 secondary_col_1, secondary_col_2, secondary_col_3, secondary_col_4 = (
     st.columns(4)
@@ -623,9 +599,7 @@ with secondary_col_4:
     )
 
 
-# ============================================================
 # PERFORMANCE TREND CHART
-# ============================================================
 
 st.subheader("Performance Trend")
 
@@ -695,13 +669,11 @@ else:
 
     st.plotly_chart(
         performance_figure,
-        use_container_width=True,
+        width="stretch",
     )
 
 
-# ============================================================
 # READINESS AND TRAINING LOAD
-# ============================================================
 
 chart_col_1, chart_col_2 = st.columns(2)
 
@@ -742,7 +714,7 @@ with chart_col_1:
 
     st.plotly_chart(
         readiness_figure,
-        use_container_width=True,
+        width="stretch",
     )
 
 with chart_col_2:
@@ -798,13 +770,11 @@ with chart_col_2:
 
     st.plotly_chart(
         load_figure,
-        use_container_width=True,
+        width="stretch",
     )
 
 
-# ============================================================
 # SIGNAL SUMMARY
-# ============================================================
 
 st.subheader("Current Signals")
 
@@ -866,14 +836,12 @@ with signal_col_3:
     )
 
 
-# ============================================================
 # DATA QUALITY SUMMARY
-# ============================================================
 
 with st.expander("Data quality summary"):
     st.dataframe(
         quality_report,
-        use_container_width=True,
+        width="stretch",
         hide_index=True,
     )
 

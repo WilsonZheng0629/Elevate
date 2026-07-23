@@ -4,3 +4,4 @@ streamlit
 plotly
 statsmodels
 scipy
+pytest

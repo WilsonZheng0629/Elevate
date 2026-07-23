@@ -1,8 +1,6 @@
 # Elevate
 
-Elevate is a sports-performance analytics platform that helps athletes make smarter training and recovery decisions using data.
-
-It combines training sessions, exercise exposure, wellness check-ins, and vertical-jump testing into one interactive dashboard.
+Elevate is a sports-performance analytics platform that helps athletes make smarter training and recovery decisions using data. It combines training sessions, exercise exposure, wellness check-ins, and vertical-jump testing into one interactive dashboard.
 
 The platform helps answer questions such as:
 
@@ -12,8 +10,6 @@ The platform helps answer questions such as:
 - Does soreness relate to lower jump results?
 - Is recent training load unusually high?
 - Should the athlete train hard, modify training, or prioritize recovery?
-
-> Elevate is not a volleyball stat tracker. It is a training decision-support platform for athletes and coaches.
 
 ---
 
@@ -33,9 +29,7 @@ The platform helps answer questions such as:
 
 ## Business Problem
 
-Athletes often track workouts, sleep, soreness, and performance in separate places. This makes it difficult to understand whether training is working or whether recovery problems are affecting performance.
-
-Elevate brings these data sources together into one analytical workflow.
+Athletes often track workouts, sleep, soreness, and performance in separate places. This makes it difficult to understand whether training is working or whether recovery problems are affecting performance. Elevate brings these data sources together into one analytical workflow.
 
 The platform converts raw athlete data into:
 

@@ -49,7 +49,7 @@ st.html(
     """
     <style>
         .block-container {
-            padding-top: 1.5rem;
+            padding-top: 4rem;
             padding-bottom: 2rem;
             max-width: 1400px;
         }
